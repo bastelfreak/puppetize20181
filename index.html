@@ -153,8 +153,8 @@
 
 class: center, middle, inverse
 
-# Vox Pupuli
-## Die Community hinter Puppet
+# Vox Pupuli - The Funny Community Journey
+## Sixth Edition?
 
 ---
 
@@ -175,117 +175,11 @@ background-size: cover
 
 * Organizing BBQ events for Arch Linux Community
 
-???
-
-* Wer kennt Puppet?
-
----
-
-class: center, middle, inverse
-
-# Storytime
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
 
 ???
 
-Bevor wir anfangen möchte ich euch eine geschichte erzählen
-
----
-
-background-image: url(bastelfreak.jpg)
-background-size: cover
-
-???
-
-* sysadmin vor langer zeit
-* symbolfoto
-
----
-
-background-image: url(blue-skies.jpg)
-background-size: cover
-
-.puppetlogo[
-![image](Puppet-Logo-Amber-Black-lg.png)
-]
----
-
-background-image: url(blue-skies.jpg)
-background-size: cover
-
-.left-column[
-## Puppet DSL
-]
-
-.right-column[
-```puppet
-package{'htop':
-  ensure => 'present',
-}
-```
-]
----
-
-background-image: url(blue-skies.jpg)
-background-size: cover
-
-.left-column[
-## Puppet
-]
-
-.right-column[
-```puppet
-package{'htop':
-  ensure => 'present',
-}
-```
-
-```puppet
-elasticsearch::instance { 'testinstance':
-  jvm_options   => $jvm_options,
-  config        => $config,
-  init_defaults => {
-    'ES_PATH_CONF' => '/etc/elasticsearch/testinstance',
-  },
-}
-```
-]
-
----
-
-background-image: url(blue-skies.jpg)
-background-size: cover
-
-.puppetlogo[
-![image](puppetforge.png)
-]
-
----
-
-background-image: url(blue-skies.jpg)
-background-size: cover
-
-.puppetlogo[
-![image](nginx.png)
-]
-
----
-
-background-image: url(blue-skies.jpg)
-background-size: cover
-
-.puppetlogo[
-![image](nginx.png)
-![image](apache2.png)
-]
-
----
-
-background-image: url(blue-skies.jpg)
-background-size: cover
-
-.puppetlogo[
-![image](puppetconf.jpg)
-]
+*
 
 ---
 
@@ -320,6 +214,7 @@ background-size: cover
 * many people write it wrong
 * we agreed on Vox Pupuli
 * Nobody knows how to pronounce it?
+* you find some old docs that refer to us as puppet-community
 
 ---
 
@@ -503,7 +398,9 @@ background-size: cover
 
 .right-column[
 
-* Currently 122 people with merge permissions
+* Currently 124 people with merge permissions
+
+  * We were 122 in July 2018
 
   * We were 113 in February 2018
 
@@ -569,6 +466,10 @@ background-size: cover
 
   * Dealing with rspec/rubocop/beaker is hard as well
 
+* Many administrators of legacy infrastructures
+
+  * Stuff older than Puppet 4.10 without proper hiera5/datatype support
+
 ]
 
 .footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
@@ -578,39 +479,6 @@ background-size: cover
 * Many contributors are new to git and github
 * Many never wrote tests
 * we don't have to teach them writing good puppet code, but all the related tooling
-
----
-
-background-image: url(blue-skies.jpg)
-background-size: cover
-
-## Vox Pupuli
-
-.left-column[
-### What?
-### Who?
-]
-
-.right-column[
-
-
-* Many administrators of legacy infrastructures
-
-  * Puppet3, Ruby191, Ruby2.0
-
-  * November 2016: Puppet2.7, Ruby187
-
-  * Do we already call Puppet4 legacy? (yes pls)
-
-]
-
-.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
-
-???
-
-Was: Ruby hashrocket notation doesnt work on ruby187
-Now: There is a strange datatype in my code (puppet4/5 code executed with puppet3)
-Now: Data-in-modules doesn't work
 
 ---
 background-image: url(blue-skies.jpg)
@@ -667,7 +535,7 @@ background-size: cover
 
 .right-column[
 
-* We are managing 105 puppet modules and (155 git repos)
+* We are managing 110 puppet modules and (160 git repos)
 
   * We had 92 modules in February 2018
 
